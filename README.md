@@ -4,6 +4,8 @@ This public repository is Group 33's working Jekyll site. Commits to `main` are
 built and published automatically at
 <https://hannahvogelarchaeology.github.io/group33/>.
 
+## ervery pr should be a rbg version of main!!
+
 ## Work locally
 
 The repository pins Ruby 4.0.6 in `.ruby-version`. With rbenv, install it once
