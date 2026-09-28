@@ -5,6 +5,9 @@ type: software
 authors:
   # Replace this group placeholder with one entry per contributor, using each
   # person's preferred public name and optional ORCID or profile URL.
+  - given-names: "Raphael"
+    family-names: "Munoz"
+    orcid: "https://orcid.org/0009-0004-8016-2743"
   - name: "Group 33 contributors"
 repository-code: "https://github.com/HannahVogelArchaeology/group33"
 url: "https://hannahvogelarchaeology.github.io/group33/"
