@@ -4,6 +4,10 @@ This public repository is Group 33's working Jekyll site. Commits to `main` are
 built and published automatically at
 <https://hannahvogelarchaeology.github.io/group33/>.
 
+## Monorepo
+
+This repo structure should be a mono repo. There only exist one version and features are not merged but are rebase to the top. the benefits are allow there to be one version of history. 
+
 ## Work locally
 
 The repository pins Ruby 4.0.6 in `.ruby-version`. With rbenv, install it once
