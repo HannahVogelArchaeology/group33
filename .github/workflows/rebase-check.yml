@@ -1,0 +1,29 @@
+name: Rebase check
+
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  rebased:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out PR head
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+          fetch-depth: 0
+      - name: Require branch rebased on latest main
+        run: |
+          git fetch origin main
+          if ! git merge-base --is-ancestor origin/main HEAD; then
+            echo "::error::Branch is behind main. Run: git fetch origin && git rebase origin/main && git push --force-with-lease"
+            exit 1
+          fi
+          if [ -n "$(git rev-list --merges origin/main..HEAD)" ]; then
+            echo "::error::Branch contains merge commits. Rebase onto main instead of merging main in."
+            exit 1
+          fi
