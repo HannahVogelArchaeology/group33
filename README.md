@@ -1,7 +1,7 @@
 # Group 33 exhibition sandbox
 
 Group 33 Jekyll site. Public repo. Push to `main` → auto build + publish →
-<https://rr-593.github.io/group33/>. Public at once, so check
+<https://hannahvogelarchaeology.github.io/group33/>. Public at once, so check
 before merge.
 
 ## Run it on your computer
@@ -60,7 +60,7 @@ flowchart TB
 
   build(["<b>jekyll build</b>"])
   site["<b>_site/</b><br>the built website"]
-  live(["<b>rr-593.github.io/group33</b>"])
+  live(["<b>hannahvogelarchaeology.github.io/group33</b>"])
   workflows["<b>.github/workflows/</b><br>deploy · Lighthouse + WCAG audit<br>data check · rebase check"]
 
   docs -. "copied word for word" .-> content
@@ -183,7 +183,7 @@ Where each piece of text lives:
 9. **Ask for a review.** Add a teammate under **Reviewers**. Merging to `main`
    publishes the site.
 10. **Check the live site.** About 2–3 minutes after merging, the change is on
-    <https://rr-593.github.io/group33/>. Refresh the page (hard refresh if it looks
+    <https://hannahvogelarchaeology.github.io/group33/>. Refresh the page (hard refresh if it looks
     old: <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd>, or
     <kbd>Cmd</kbd>+<kbd>Shift</kbd>+<kbd>R</kbd> on a Mac).
 
@@ -203,12 +203,12 @@ someone using it.
 It is off on every device until you turn it on, so visitors can't switch it on by
 accident:
 
-1. On the tablet, open <https://rr-593.github.io/group33/?kiosk=on>.
+1. On the tablet, open <https://hannahvogelarchaeology.github.io/group33/?kiosk=on>.
 2. A message asks whether to turn on gallery tablet mode. Tap **OK**.
 3. The address goes back to normal and the mode stays on for that browser, even after
    restarting it. Other devices are not affected.
 
-To turn it off, open <https://rr-593.github.io/group33/?kiosk=off> on that tablet.
+To turn it off, open <https://hannahvogelarchaeology.github.io/group33/?kiosk=off> on that tablet.
 Clearing the browser's website data also turns it off.
 
 Change the timings under `kiosk:` in `_config.yml` (`idle_seconds`, `warning_seconds`).
